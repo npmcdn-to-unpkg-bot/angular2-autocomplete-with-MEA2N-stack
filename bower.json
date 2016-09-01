@@ -1,0 +1,8 @@
+{
+  "name": "TasteBuds",
+  "description": "TasteBuds sample",
+  "dependencies": {
+    "angular2-build": "^2.0.0-alpha.34",
+    "owasp-password-strength-test": "^1.3.0"
+  }
+}

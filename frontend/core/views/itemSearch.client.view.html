@@ -1,0 +1,12 @@
+<div class="input-group">
+    <span class="input-group-addon" id="mainSearchLabel">taste</span>
+    <input class="form-control" type="text" [ng2-autocomplete]="doSearch()" (ng2AutocompleteOnSelect)="onSelected($event)"
+        [(ngModel)]="foodItemName" placeholder="search for" type="text" autocomplete="off">
+</div>
+<div class="suggestions" *ngIf="filteredList">
+    <ul *ngFor="let item of filteredList; let idx = index">
+        <li [class.complete-selected]="idx == selectedIdx">
+            <a (click)="select(item)">{{item}}</a>
+        </li>
+    </ul>
+</div>
