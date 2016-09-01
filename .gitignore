@@ -1,0 +1,6 @@
+node_modules
+node_modules.bk
+bower_components
+typings
+*.log
+**/.DS_Store
