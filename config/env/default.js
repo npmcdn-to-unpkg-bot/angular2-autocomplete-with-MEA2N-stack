@@ -33,7 +33,7 @@ module.exports = {
     csrf: true,
     csp: { 
       policy:{  'default-src': '*;', 
-            	  'script-src':"'self' 'unsafe-eval' 'unsafe-inline' https://npmcdn.com;", 
+            	  'script-src':"'self' 'unsafe-eval' 'unsafe-inline' https://unpkg.com;", 
                 'style-src':"'self' 'nonce-...' 'unsafe-eval' 'unsafe-inline'" } 
       },
     xframe: 'SAMEORIGIN',
